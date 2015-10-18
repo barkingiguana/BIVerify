@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BISignedAction {
+public class BISignedAction {
     static let PARAMETER_SIGNATURE = "verify_signature"
     static let PARAMETER_PUBLIC_KEY = "verify_public_key"
     

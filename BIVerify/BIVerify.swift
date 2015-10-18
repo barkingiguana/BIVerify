@@ -9,7 +9,7 @@
 import Foundation
 
 public class BIVerify {
-    static func expressIntent(verb:String, path:String, parameters:[String:String]) -> BIIntent {
+    public static func expressIntent(verb:String, path:String, parameters:[String:String]) -> BIIntent {
         return BIIntent(verb: verb, path: path, parameters: parameters)
     }
 }

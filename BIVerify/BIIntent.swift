@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BIIntent {
+public class BIIntent {
     let verb: String
     let rawPath: String
     let parameters: [String: String]
@@ -44,7 +44,7 @@ class BIIntent {
         self.parameters = parameters
     }
     
-    func sign(key:String, secret:String, expiresAt:NSDate) -> BISignedAction {
+    public func sign(key:String, secret:String, expiresAt:NSDate) -> BISignedAction {
         let signature = BISignature(key: key, intent: self, secret: secret, expiresAt: expiresAt)
         return BISignedAction(intent: self, signature: signature)
     }

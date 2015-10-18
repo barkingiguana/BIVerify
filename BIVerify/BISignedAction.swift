@@ -8,18 +8,18 @@
 
 import Foundation
 
-class SignedAction {
+class BISignedAction {
     static let PARAMETER_SIGNATURE = "verify_signature"
     static let PARAMETER_PUBLIC_KEY = "verify_public_key"
     
-    let intent: Intent
-    let signature: Signature
+    let intent: BIIntent
+    let signature: BISignature
     
     var signedPath:String {
         get {
             let path = intent.path
-            let sig = "\(SignedAction.PARAMETER_SIGNATURE)=\(signature.string)"
-            let key = "\(SignedAction.PARAMETER_PUBLIC_KEY)=\(signature.key)"
+            let sig = "\(BISignedAction.PARAMETER_SIGNATURE)=\(signature.string)"
+            let key = "\(BISignedAction.PARAMETER_PUBLIC_KEY)=\(signature.key)"
             let qs = "\(sig)&\(key)"
             if path.containsString("?") {
                 return "\(path)&\(qs)"
@@ -29,7 +29,7 @@ class SignedAction {
         }
     }
     
-    init(intent:Intent, signature:Signature) {
+    init(intent:BIIntent, signature:BISignature) {
         self.intent = intent
         self.signature = signature
     }

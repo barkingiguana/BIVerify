@@ -1,5 +1,5 @@
 //
-//  Intent.swift
+//  BIIntent.swift
 //  Verify
 //
 //  Created by Craig Webster on 14/10/2015.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Intent {
+class BIIntent {
     let verb: String
     let rawPath: String
     let parameters: [String: String]
@@ -44,8 +44,8 @@ class Intent {
         self.parameters = parameters
     }
     
-    func sign(key:String, secret:String, expiresAt:NSDate) -> SignedAction {
-        let signature = Signature(key: key, intent: self, secret: secret, expiresAt: expiresAt)
-        return SignedAction(intent: self, signature: signature)
+    func sign(key:String, secret:String, expiresAt:NSDate) -> BISignedAction {
+        let signature = BISignature(key: key, intent: self, secret: secret, expiresAt: expiresAt)
+        return BISignedAction(intent: self, signature: signature)
     }
 }

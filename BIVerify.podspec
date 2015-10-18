@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.name         = "BIVerify"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "Port of barkingiguana/verify to Swift"
   s.homepage     = "http://github.com/barkingiguana/BIVerify"
   s.license      = "MIT"

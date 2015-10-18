@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		446B4F7A1BD4309E00592A31 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F761BD4309E00592A31 /* Intent.swift */; settings = {ASSET_TAGS = (); }; };
-		446B4F7B1BD4309E00592A31 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F771BD4309E00592A31 /* Signature.swift */; settings = {ASSET_TAGS = (); }; };
-		446B4F7C1BD4309E00592A31 /* SignedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F781BD4309E00592A31 /* SignedAction.swift */; settings = {ASSET_TAGS = (); }; };
-		446B4F7D1BD4309E00592A31 /* Verify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F791BD4309E00592A31 /* Verify.swift */; settings = {ASSET_TAGS = (); }; };
+		446B4F7A1BD4309E00592A31 /* BIIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F761BD4309E00592A31 /* BIIntent.swift */; settings = {ASSET_TAGS = (); }; };
+		446B4F7B1BD4309E00592A31 /* BISignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F771BD4309E00592A31 /* BISignature.swift */; settings = {ASSET_TAGS = (); }; };
+		446B4F7C1BD4309E00592A31 /* BISignedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F781BD4309E00592A31 /* BISignedAction.swift */; settings = {ASSET_TAGS = (); }; };
+		446B4F7D1BD4309E00592A31 /* BIVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F791BD4309E00592A31 /* BIVerify.swift */; settings = {ASSET_TAGS = (); }; };
 		449C00F51BD42F3F00F866FA /* BIVerify.h in Headers */ = {isa = PBXBuildFile; fileRef = 449C00F41BD42F3F00F866FA /* BIVerify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C58E6ED7A1BA248F57CF6EC /* Pods_BIVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167276A610C94E9B958C4B95 /* Pods_BIVerify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		167276A610C94E9B958C4B95 /* Pods_BIVerify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIVerify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		446B4F761BD4309E00592A31 /* Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intent.swift; sourceTree = "<group>"; };
-		446B4F771BD4309E00592A31 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
-		446B4F781BD4309E00592A31 /* SignedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedAction.swift; sourceTree = "<group>"; };
-		446B4F791BD4309E00592A31 /* Verify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verify.swift; sourceTree = "<group>"; };
+		446B4F761BD4309E00592A31 /* BIIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BIIntent.swift; sourceTree = "<group>"; };
+		446B4F771BD4309E00592A31 /* BISignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BISignature.swift; sourceTree = "<group>"; };
+		446B4F781BD4309E00592A31 /* BISignedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BISignedAction.swift; sourceTree = "<group>"; };
+		446B4F791BD4309E00592A31 /* BIVerify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BIVerify.swift; sourceTree = "<group>"; };
 		449C00F11BD42F3F00F866FA /* BIVerify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIVerify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449C00F41BD42F3F00F866FA /* BIVerify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIVerify.h; sourceTree = "<group>"; };
 		449C00F61BD42F3F00F866FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,10 +70,10 @@
 		449C00F31BD42F3F00F866FA /* BIVerify */ = {
 			isa = PBXGroup;
 			children = (
-				446B4F761BD4309E00592A31 /* Intent.swift */,
-				446B4F771BD4309E00592A31 /* Signature.swift */,
-				446B4F781BD4309E00592A31 /* SignedAction.swift */,
-				446B4F791BD4309E00592A31 /* Verify.swift */,
+				446B4F761BD4309E00592A31 /* BIIntent.swift */,
+				446B4F771BD4309E00592A31 /* BISignature.swift */,
+				446B4F781BD4309E00592A31 /* BISignedAction.swift */,
+				446B4F791BD4309E00592A31 /* BIVerify.swift */,
 				449C00F41BD42F3F00F866FA /* BIVerify.h */,
 				449C00F61BD42F3F00F866FA /* Info.plist */,
 			);
@@ -202,10 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				446B4F7D1BD4309E00592A31 /* Verify.swift in Sources */,
-				446B4F7B1BD4309E00592A31 /* Signature.swift in Sources */,
-				446B4F7A1BD4309E00592A31 /* Intent.swift in Sources */,
-				446B4F7C1BD4309E00592A31 /* SignedAction.swift in Sources */,
+				446B4F7D1BD4309E00592A31 /* BIVerify.swift in Sources */,
+				446B4F7B1BD4309E00592A31 /* BISignature.swift in Sources */,
+				446B4F7A1BD4309E00592A31 /* BIIntent.swift in Sources */,
+				446B4F7C1BD4309E00592A31 /* BISignedAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

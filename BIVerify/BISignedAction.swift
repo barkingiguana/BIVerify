@@ -15,7 +15,7 @@ public class BISignedAction {
     let intent: BIIntent
     let signature: BISignature
     
-    var signedPath:String {
+    public var signedPath:String {
         get {
             let path = intent.path
             let sig = "\(BISignedAction.PARAMETER_SIGNATURE)=\(signature.string)"

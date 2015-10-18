@@ -43,14 +43,12 @@ class BISignature {
         self.expiresAt = expiresAt
     }
     
-    // TODO: Make this private
     func base64(data: String) -> String {
         let raw = data.dataUsingEncoding(NSUTF8StringEncoding)?.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
         let result = raw?.stringByReplacingOccurrencesOfString("\\n", withString: "", options: NSStringCompareOptions.RegularExpressionSearch)
         return result!
     }
-    
-    // TODO: Make this private
+
     func doHmac(data: String, key: String) -> String {
         let k = [UInt8](key.utf8)
         let authenticator = Authenticator.HMAC(key: k, variant: HMAC.Variant.sha256)

@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		446B4F7A1BD4309E00592A31 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F761BD4309E00592A31 /* Intent.swift */; settings = {ASSET_TAGS = (); }; };
+		446B4F7B1BD4309E00592A31 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F771BD4309E00592A31 /* Signature.swift */; settings = {ASSET_TAGS = (); }; };
+		446B4F7C1BD4309E00592A31 /* SignedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F781BD4309E00592A31 /* SignedAction.swift */; settings = {ASSET_TAGS = (); }; };
+		446B4F7D1BD4309E00592A31 /* Verify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B4F791BD4309E00592A31 /* Verify.swift */; settings = {ASSET_TAGS = (); }; };
 		449C00F51BD42F3F00F866FA /* BIVerify.h in Headers */ = {isa = PBXBuildFile; fileRef = 449C00F41BD42F3F00F866FA /* BIVerify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C58E6ED7A1BA248F57CF6EC /* Pods_BIVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167276A610C94E9B958C4B95 /* Pods_BIVerify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		167276A610C94E9B958C4B95 /* Pods_BIVerify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIVerify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		446B4F761BD4309E00592A31 /* Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intent.swift; sourceTree = "<group>"; };
+		446B4F771BD4309E00592A31 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		446B4F781BD4309E00592A31 /* SignedAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedAction.swift; sourceTree = "<group>"; };
+		446B4F791BD4309E00592A31 /* Verify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verify.swift; sourceTree = "<group>"; };
 		449C00F11BD42F3F00F866FA /* BIVerify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BIVerify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449C00F41BD42F3F00F866FA /* BIVerify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIVerify.h; sourceTree = "<group>"; };
 		449C00F61BD42F3F00F866FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF45F206EF062170086EEB3 /* Pods-BIVerify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVerify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BIVerify/Pods-BIVerify.debug.xcconfig"; sourceTree = "<group>"; };
+		D4173E66E1BBFF0DB9FA9675 /* Pods-BIVerify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIVerify.release.xcconfig"; path = "Pods/Target Support Files/Pods-BIVerify/Pods-BIVerify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C58E6ED7A1BA248F57CF6EC /* Pods_BIVerify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA384B8F6681812F74D97DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DF45F206EF062170086EEB3 /* Pods-BIVerify.debug.xcconfig */,
+				D4173E66E1BBFF0DB9FA9675 /* Pods-BIVerify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		449C00E71BD42F3F00F866FA = {
 			isa = PBXGroup;
 			children = (
 				449C00F31BD42F3F00F866FA /* BIVerify */,
 				449C00F21BD42F3F00F866FA /* Products */,
+				0AA384B8F6681812F74D97DC /* Pods */,
+				64D99E6418CDE341E1F72916 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +70,22 @@
 		449C00F31BD42F3F00F866FA /* BIVerify */ = {
 			isa = PBXGroup;
 			children = (
+				446B4F761BD4309E00592A31 /* Intent.swift */,
+				446B4F771BD4309E00592A31 /* Signature.swift */,
+				446B4F781BD4309E00592A31 /* SignedAction.swift */,
+				446B4F791BD4309E00592A31 /* Verify.swift */,
 				449C00F41BD42F3F00F866FA /* BIVerify.h */,
 				449C00F61BD42F3F00F866FA /* Info.plist */,
 			);
 			path = BIVerify;
+			sourceTree = "<group>";
+		};
+		64D99E6418CDE341E1F72916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				167276A610C94E9B958C4B95 /* Pods_BIVerify.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 449C00F91BD42F3F00F866FA /* Build configuration list for PBXNativeTarget "BIVerify" */;
 			buildPhases = (
+				0140AD8571F7298D96862352 /* Check Pods Manifest.lock */,
 				449C00EC1BD42F3F00F866FA /* Sources */,
 				449C00ED1BD42F3F00F866FA /* Frameworks */,
 				449C00EE1BD42F3F00F866FA /* Headers */,
 				449C00EF1BD42F3F00F866FA /* Resources */,
+				36155BD49170367B7894506E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -90,6 +128,7 @@
 		449C00E81BD42F3F00F866FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Barking Iguana";
 				TargetAttributes = {
@@ -125,11 +164,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0140AD8571F7298D96862352 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36155BD49170367B7894506E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BIVerify/Pods-BIVerify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		449C00EC1BD42F3F00F866FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446B4F7D1BD4309E00592A31 /* Verify.swift in Sources */,
+				446B4F7B1BD4309E00592A31 /* Signature.swift in Sources */,
+				446B4F7A1BD4309E00592A31 /* Intent.swift in Sources */,
+				446B4F7C1BD4309E00592A31 /* SignedAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +303,9 @@
 		};
 		449C00FA1BD42F3F00F866FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF45F206EF062170086EEB3 /* Pods-BIVerify.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +316,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.barkingiguana.BIVerify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		449C00FB1BD42F3F00F866FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4173E66E1BBFF0DB9FA9675 /* Pods-BIVerify.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -276,6 +357,7 @@
 				449C00FB1BD42F3F00F866FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

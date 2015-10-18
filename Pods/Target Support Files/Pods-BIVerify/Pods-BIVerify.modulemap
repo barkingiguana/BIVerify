@@ -1,0 +1,6 @@
+framework module Pods_BIVerify {
+  umbrella header "Pods-BIVerify-umbrella.h"
+
+  export *
+  module * { export * }
+}
